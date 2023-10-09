@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <p>My Website</p>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#club">部活動</a></li>
+                <li><a href="#favorite">好きなこと</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
     <section class="firstview">
         <h1>My Website</h1>
         <p>私のウェブサイト</p>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="profile">
                 <div>
@@ -43,7 +58,25 @@
             </div>
         </div>    
     </section>
-    <section class="favorite">
+    <section id="club" class="club">
+        <div class="container">
+            <div class="club-img">
+                <img src="images/trumpet-big.png" alt="">
+                <img src="images/background-pattern.png" alt="">
+                <img src="images/trumpet-small.png" alt="">
+            </div>
+            <div class="club-text">
+                <h2>吹奏楽部</h2>
+                <p>
+                    私たちの吹奏楽部は週4回、<br>
+                    普段はコンクールに向けた練習を、行っています<br>
+                    今は学園祭に向けて、流行りの曲を練習中です。<br>
+                    大変なことも多いですが、とても楽しいです！
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="favorite" id="favorite">
         <div class="container">
             <h2 class="section-title">好きなこと</h2>
                 <div class="favorite-contents">
@@ -71,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
         <div class="container">
             <h2 class="section-title">Works</h2>
             <a href="https://life-is-tech.com/" class="works-content">
@@ -90,7 +123,7 @@
             </a>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <p>
@@ -105,5 +138,8 @@
             </div>
         </div>
     </section>
+    <footer>
+        @Life is Tech! WebDesign Course
+    </footer>
 </body>
 </html>

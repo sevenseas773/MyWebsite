@@ -6,6 +6,7 @@
 
 body{
     color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 a{
@@ -20,6 +21,7 @@ a{
     margin: 0 auto;
 }
 
+
 .section-title{
     display: inline-block;
     font-size: 64px;
@@ -29,6 +31,45 @@ a{
 @media(max-width: 768px){
     .section-title{
         font-size: 44px;
+    }
+}
+
+header{
+    height: 80px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 80%);
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+
+header a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    header ul{
+        display: none;
     }
 }
 
@@ -109,6 +150,7 @@ a{
     }
 }
 
+
 .school-club{
     display: flex;
     column-gap: 5%;
@@ -156,6 +198,93 @@ a{
         margin-top: 24px;
     }
 
+}
+
+.club{
+    padding: 140px 0;
+    background-color: #fffdf3;
+}
+
+.club .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.club-text{
+    width: 40%;
+    position: relative;
+    z-index: 4;
+}
+
+.club-text h2{
+    font-size: 48px;
+}
+
+.club-text p{
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.club-img{
+    width: 50%;
+    position: relative;
+    aspect-ratio: 1/1.25;
+}
+
+.club-img img{
+    position: absolute;
+}
+
+.club-img img:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 65%;
+    z-index: 3;
+}
+
+.club-img img:nth-child(2){
+    top: 30%;
+    left: 8%;
+    width: 85%;
+    z-index: 1;
+}
+
+.club-img img:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    z-index: 2;
+}
+
+@media (max-width: 768px){
+    .club{
+        padding: 80px 0;
+    }
+
+    .club .container{
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .club-img{
+        width: 100%;
+    }
+
+    .club-text{
+        width: 100%;
+    }
+
+    .club-text h2{
+        font-size: 32px;
+    }
+
+    .club-text p{
+        font-size: 14px;
+    }
 }
 
 .favorite {
@@ -359,5 +488,17 @@ a{
         line-height: 60px;
     }
 
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    background-color: #edece7;
 }
 
