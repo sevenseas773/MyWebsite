@@ -285,3 +285,79 @@ a{
         width: 100%;
     }
 }
+
+.contact{
+    padding: 140px 0;
+    text-align: center;
+}
+
+.contact .container{
+    min-width: 800px;
+}
+
+.contact .section-title{
+    border-bottom: 3px solid #f90;
+}
+
+.contact p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    margin-top: 48px;
+    text-align: left;
+}
+
+.contact a{
+    display: inline-block;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 80px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.contact .sns-twitter{
+    background-color: #00acee;
+}
+
+.contact .sns-facebook{
+    background-color: #3b5998;
+}
+
+.contact .sns-website{
+    background-color: #333;
+}
+
+.contact .sns{
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+@media (max-width: 768px){
+    .contact{
+        padding: 80px 0;
+    }
+
+    .contact p{
+        font-size: 20px;
+    }
+
+    .contact .sns{
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 50px;
+    }
+
+    .contact a{
+        width: 100px;
+        line-height: 60px;
+    }
+
+}
+
