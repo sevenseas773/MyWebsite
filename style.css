@@ -292,7 +292,7 @@ a{
 }
 
 .contact .container{
-    min-width: 800px;
+    max-width: 800px;
 }
 
 .contact .section-title{
@@ -355,7 +355,7 @@ a{
     }
 
     .contact a{
-        width: 100px;
+        width: 100%;
         line-height: 60px;
     }
 
